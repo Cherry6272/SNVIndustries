@@ -1,0 +1,208 @@
+╔═══════════════════════════════════════════════════════════════╗
+║              SNV MOTORS - CUSTOMIZATION GUIDE                 ║
+║          How to Update Content Without Coding                 ║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+📧 1. UPDATE CONTACT INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html
+
+A) Email Address:
+   Find: venusnv@stamping.com
+   Replace with: your-email@company.com
+   (Appears in contact section)
+
+B) Phone Number:
+   Find: +91 735037 38939
+   Replace with: your phone number
+   (Appears in contact section)
+
+C) Physical Address:
+   Find: Survey no 55, Bylakonenahalli...
+   Replace with: your complete address
+   (Line ~514 in index.html)
+
+
+📊 2. UPDATE COMPANY STATISTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (About Section, around line 133-158)
+
+Find these lines and change the numbers:
+
+<span class="stat-number" data-target="25">0</span>
+Change "25" to your years of experience
+
+<span class="stat-number" data-target="500">0</span>
+Change "500" to your client count
+
+<span class="stat-number" data-target="10000">0</span>
+Change "10000" to your products delivered
+
+<span class="stat-number" data-target="99">0</span>
+Change "99" to your quality rate percentage
+
+
+🖼️ 3. REPLACE IMAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A) Company Logo:
+   - Replace: "Final SNV Logo.png"
+   - Size: 200x80 pixels recommended
+   - Format: PNG with transparent background
+
+B) Footer Logo (White version):
+   - Replace: "snv logo - white.png"
+   - Size: 200x80 pixels recommended
+   - Format: PNG with transparent background
+
+C) Hero Background Images:
+   - Replace images in "Home Pages" folder:
+     • 3.png
+     • home 3.png
+     • home page 5.png
+     • home page 6.png
+   - Size: 1920x1080 pixels recommended
+   - Format: JPG or PNG
+
+
+🎨 4. CHANGE BRAND COLORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: styles.css
+
+A) Primary Orange Color (#ff6b35):
+   - Use Find & Replace in your text editor
+   - Find: #ff6b35
+   - Replace with: your brand color (e.g., #0066cc)
+
+B) Contact Card Blue (#1f6aa2):
+   - Find: #1f6aa2
+   - Replace with: your preferred color
+
+
+💬 5. UPDATE TESTIMONIALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Testimonials Section, line ~436-494)
+
+For each testimonial, update:
+- Customer name: <h4>Michael Chen</h4>
+- Job title: <span>Production Manager, TechMotors Inc.</span>
+- Review text: <p>"Your review text here..."</p>
+- Stars: Keep ★★★★★ or adjust rating
+
+
+📦 6. ADD/EDIT PRODUCTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Products Section, line ~194-345)
+
+To add a new product, copy this template:
+
+<div class="product-card" data-category="stator">
+    <div class="product-image">
+        <!-- Icon SVG here -->
+    </div>
+    <div class="product-content">
+        <h3>Product Name</h3>
+        <p>Product description goes here.</p>
+        <ul class="product-features">
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <div class="product-specs">
+            <span class="spec">Specification 1</span>
+            <span class="spec">Specification 2</span>
+        </div>
+    </div>
+</div>
+
+Categories: stator, rotor, housing, custom
+
+
+🔗 7. UPDATE SOCIAL MEDIA LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Contact Section, line ~521-526)
+
+Update these links:
+<a href="https://linkedin.com/company/yourcompany" class="social-link">in</a>
+<a href="https://facebook.com/yourcompany" class="social-link">f</a>
+<a href="https://instagram.com/yourcompany" class="social-link">◎</a>
+<a href="https://youtube.com/yourcompany" class="social-link">▶</a>
+
+
+📝 8. EDIT PAGE TITLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Line 6)
+
+Find:
+<title>SNV - Powering Motors With Precision, Quality, and Lean Practice</title>
+
+Replace with your desired page title (appears in browser tab)
+
+
+📄 9. UPDATE FOOTER COPYRIGHT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Line ~663)
+
+Find:
+<p>&copy; 2024 SNV Motors. All rights reserved.</p>
+
+Update year and company name as needed
+
+
+🎯 10. MODIFY HERO SECTION TEXT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File: index.html (Line ~51-53)
+
+Main Heading:
+<h1 class="hero-title">Your Main Heading Here</h1>
+
+Subtitle:
+<p class="hero-subtitle">Your subtitle text here</p>
+
+Button Text:
+<a href="#products" class="cta-button">YOUR BUTTON TEXT</a>
+
+
+═══════════════════════════════════════════════════════════════
+
+🛠️ TOOLS YOU'LL NEED:
+
+1. Text Editor (Choose one):
+   - Notepad++ (Windows) - Free
+   - Sublime Text - Free
+   - VS Code - Free
+   - Even regular Notepad works!
+
+2. Image Editor (Optional):
+   - Canva.com - Free, online
+   - GIMP - Free desktop app
+   - Photoshop - Paid
+
+3. FTP Client (for uploading):
+   - FileZilla - Free
+   - Or use cPanel File Manager
+
+
+⚠️ IMPORTANT TIPS:
+
+✓ Always save a backup before editing
+✓ Use Find & Replace for bulk changes
+✓ Test locally before uploading
+✓ Keep file names exactly the same
+✓ Don't change file structure
+✓ Clear browser cache after changes
+
+
+═══════════════════════════════════════════════════════════════
+
+Need more help? See README.md for detailed documentation.
