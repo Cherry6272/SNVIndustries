@@ -1001,3 +1001,46 @@ function initializeLazyLoading() {
 
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', initializeLazyLoading);
+
+// ===== PRODUCT TABS =====
+
+function initializeProductTabs() {
+    const tabsContainer = document.querySelector('.product-tabs');
+    if (!tabsContainer) return;
+
+    const tabButtons = tabsContainer.querySelectorAll('.product-tab-btn');
+    const tabContents = document.querySelectorAll('.product-tab-content');
+
+    // Set the first tab as active by default
+    if (tabButtons.length > 0) {
+        tabButtons[0].classList.add('active');
+        const firstTabId = tabButtons[0].dataset.tab;
+        const firstTabContent = document.getElementById(firstTabId);
+        if (firstTabContent) {
+            firstTabContent.classList.add('active');
+        }
+    }
+
+    tabsContainer.addEventListener('click', (e) => {
+        const clicked = e.target.closest('.product-tab-btn');
+        if (!clicked) return;
+
+        // Remove active classes from all buttons and content
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Add active class to clicked button and corresponding content
+        clicked.classList.add('active');
+        const tabId = clicked.dataset.tab;
+        const activeContent = document.getElementById(tabId);
+        if (activeContent) {
+            activeContent.classList.add('active');
+        }
+    });
+
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    safeInit('Product Tabs', initializeProductTabs);
+});
+
