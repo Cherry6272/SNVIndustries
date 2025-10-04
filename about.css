@@ -1,0 +1,152 @@
+/* About Us Section */
+.about-us-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-logo .logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+  
+.about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-us-image-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.about-us-text-container .section-heading {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.about-us-text-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    background-color: #005a9c;
+    color: white;
+    padding: 60px 0;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.vision-item h3, .mission-item h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.vision-item p, .mission-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Founder's Message Section */
+.founder-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.founder-section .section-heading {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.founder-text-container h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ff6b35;
+    text-align: left;
+}
+
+.founder-title {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.founder-text-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.founder-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-image-wrapper {
+    position: relative;
+    padding: 0;
+    background: linear-gradient(145deg, #ff6b35, #e55a2b);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.25);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.founder-image-wrapper img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .about-us-grid, .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .founder-grid {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+    }
+}

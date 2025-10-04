@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const heroBackgrounds = document.querySelectorAll('.hero-bg');
+const heroContents = document.querySelectorAll('.hero-content');
 const heroBackgroundsContainer = document.querySelector('.hero-backgrounds');
 const bgDots = document.querySelectorAll('.bg-dot');
 const navPrev = document.querySelector('.nav-prev');
@@ -133,8 +134,15 @@ function initializeCarousel() {
 }
 
 function goToSlide(slideIndex) {
-    // Remove active class from current dot
+    // Remove active class from current dot and content
     bgDots[currentSlide].classList.remove('active');
+    
+    // Check if we're on the contact page - if so, don't change text content
+    const isContactPage = window.location.pathname.includes('contact.html') || document.title.includes('Contact');
+    
+    if (!isContactPage && heroContents.length > currentSlide) {
+        heroContents[currentSlide].classList.remove('active');
+    }
     
     // Remove all slide classes from container
     heroBackgroundsContainer.classList.remove('slide-0', 'slide-1', 'slide-2', 'slide-3');
@@ -145,8 +153,16 @@ function goToSlide(slideIndex) {
     // Add the appropriate slide class to create sliding effect
     heroBackgroundsContainer.classList.add(`slide-${currentSlide}`);
     
-    // Add active class to new dot
+    // Add active class to new dot and content
     bgDots[currentSlide].classList.add('active');
+    
+    // Only change text content if not on contact page
+    if (!isContactPage && heroContents.length > currentSlide) {
+        heroContents[currentSlide].classList.add('active');
+    } else if (isContactPage && heroContents.length > 0) {
+        // Keep the first (and only) content active on contact page
+        heroContents[0].classList.add('active');
+    }
 }
 
 function nextSlide() {
@@ -511,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeProductFiltering() {
     if (categoryBtns.length === 0) return;
-    
+
     categoryBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const category = btn.getAttribute('data-category');

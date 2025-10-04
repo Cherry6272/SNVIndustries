@@ -1,0 +1,294 @@
+/* Product Feature Section */
+.product-feature-section {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.product-feature-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-feature-header h1 .highlight {
+    color: #ff6b35;
+}
+
+.product-feature-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-feature-image {
+    margin-bottom: 40px;
+}
+
+.product-feature-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.product-feature-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.product-feature-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* General Scrollbar Hiding */
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+}
+
+.nav-logo .logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .product-tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Technical Specification Section */
+.technical-specs-section {
+    padding: 40px 0 80px;
+    background: #fff;
+}
+
+.technical-specs-section .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6b35;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.spec-tables-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.spec-tables-grid .spec-table-wrapper:first-child {
+    grid-column: span 2;
+}
+
+.technical-specs-section .spec-table-wrapper h4 {
+    background-color: #005a9c;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 15px;
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.technical-specs-section .spec-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.technical-specs-section .spec-table-wrapper td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.95rem;
+}
+
+.technical-specs-section .spec-table-wrapper tr:last-child td {
+    border-bottom: none;
+}
+
+.technical-specs-section .spec-table-wrapper tr td:first-child {
+    font-weight: 500;
+    color: #495057;
+}
+
+.technical-specs-section .spec-table-wrapper tr td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: #212529;
+}
+
+.pitch-table {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+/* Product Gallery Section */
+.product-gallery-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.product-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-gallery-item {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.product-gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.product-gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .spec-tables-grid {
+        grid-template-columns: 1fr;
+    }
+    .spec-tables-grid .spec-table-wrapper:first-child {
+        grid-column: span 1;
+    }
+    
+    .product-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 125 Ton Press Line Section */
+.press-line-125-section {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.press-line-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.press-line-header h1 .highlight {
+    color: #ff6b35;
+}
+
+.press-line-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.press-line-image {
+    margin-bottom: 40px;
+}
+
+.press-line-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.press-line-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.press-line-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Manufacturing Facility Section */
+.manufacturing-facility-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.facility-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.facility-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.facility-header h1 .highlight {
+    color: #ff6b35;
+}
+
+.facility-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.facility-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.facility-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.facility-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    .facility-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
