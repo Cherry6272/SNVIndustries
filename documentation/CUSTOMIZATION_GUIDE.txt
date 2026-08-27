@@ -10,7 +10,7 @@
 File: index.html
 
 A) Email Address:
-   Find: venusnv@stamping.com
+   Find: venu@snvstampings.com
    Replace with: your-email@company.com
    (Appears in contact section)
 

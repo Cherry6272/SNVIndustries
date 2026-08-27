@@ -100,7 +100,7 @@ Website Source Files/
   - Real-time validation
   - Loading states
 - **Contact Information Card**:
-  - Email: venusnv@stamping.com
+  - Email: venu@snvstampings.com / hsn.venu@gmail.com
   - WhatsApp/SMS: +91 735037 38939
   - Physical address in Bengaluru
   - Social media links
@@ -162,7 +162,7 @@ Footer
 
 #### **Contact Details** (in `index.html`, line ~488-515):
 ```html
-<div class="info-value">venusnv@stamping.com</div>
+<div class="info-value">venu@snvstampings.com</div>
 <div class="info-value">+91 735037 38939</div>
 <div class="info-value">Your Address Here</div>
 ```
@@ -285,7 +285,7 @@ In `index.html` (line ~521-526):
 Search for `+91 735037 38939` in `index.html` and replace.
 
 #### **Change Email:**
-Search for `venusnv@stamping.com` in `index.html` and replace.
+Search for `venu@snvstampings.com` in `index.html` and replace.
 
 #### **Update Copyright Year:**
 In `index.html` footer section (line ~663):
